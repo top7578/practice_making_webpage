@@ -45,9 +45,24 @@
             border-bottom: 1px solid #ccc;
         }
     </style>
+
+    <script language=javascript>
+    function exp(c)
+    {
+        if(c == 1)
+            alert("선동열(1963년 1월 10일 ~ )은 대한민국의 은퇴한 야구 선수이며, 현재 대한민국 야구 국가대표팀의 감독이다. 광주 출생으로 1985년 1차 3순위 지명을 받아 연고 팀 해태 타이거즈에 입단하여 11년간 6번의 한국시리즈 우승을 이끌었고 7년 연속 평균자책점 수위와 4차례의 다승왕을 차지했고 3번의 정규시즌 MVP와 6번의 골든글러브를 수상하며 한국 프로야구 역대 최고의 투수로 손꼽힌다. ")
+
+        if(c == 2)
+            alert("김주찬(1981년 3월 25일 ~ )은 KBO 리그 KIA 타이거즈의 내야수, 외야수, 지명타자이다 ")
+
+        if(c == 3)
+            alert("로헤아르빈 아르헬로 로저 버나디나(1984년 6월 12일 ~ )는 네덜란드의 야구 선수이자, 현재 KBO 리그 KIA 타이거즈의 외야수, 내야수, 지명타자이다. KBO 리그 등록명은 버나디나이다. ")
+    }
+    </script>
+
 </head>
 <body>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <table>
         <p>노히트노런
         <tr>
@@ -55,13 +70,21 @@
             <td>일자: 1984.05.05<br> 한국프로야구 최초, 6삼진, 3사사구</td>
         </tr>
         <tr>
-            <th scope="row">선동열</th>
-            <td>일자: 1989.07.06<br> 9삼진, 3사사구</td>
+            <th scope="row">
+                선동열<br>
+                <input type=button value="설명" onclick="exp(1)">
+            </th>
+            <td>
+                일자: 1989.07.06<br> 9삼진, 3사사구
+            </td>
         </tr>
     </table>
+    <img src="선동렬.jpg" height="400" width="350" vspace="5" hspace="100" align="left">
+    <img src="홍현우.jpg" height="300" width="350" vspace="50" hspace="100" align="right">
 
     <table>
-        <br><br>
+        <br>
+        <br>
         <p>연속타자 홈런(3연속)
         <tr>
             <th scope="row">김준환/백인호<br> /박철우</th>
@@ -85,15 +108,25 @@
         </tr>
     </table>
 
+    <img src="김주찬.jpg" height="400" width="350" vspace="5" hspace="200" align="right">
+    <img src="버나디나.jpg" height="400" width="350" vspace="50" hspace="200" align="left">
+
     <table>
-        <br><br>
+        <br>
+        <br>
         <p>사이클링히트
         <tr>
-            <th scope="row">김주찬</th>
+            <th scope="row">
+                김주찬<br>
+                <input type=button value="설명" onclick="exp(2)">
+            </th>
             <td>일자: 2016.04.15<br>팀 내 최초</td>
         </tr>
         <tr>
-            <th scope="row">버나디나</th>
+            <th scope="row">
+                버나디나<br>
+                <input type=button value="설명" onclick="exp(3)">
+            </th>
             <td>일자: 2017.08.03<br>외국인 선수 최초</td>
         </tr>
     </table>
