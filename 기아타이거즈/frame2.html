@@ -11,8 +11,30 @@
             background-position: left top;
             background-size: 1950px 800px;
         }
+
+        #about_music {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            color: white;
+            display: none;
+        }
+
+        #slideDown {
+            position: fixed;
+            bottom: 28px;
+            right: 5px;
+        }
     </style>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $ ('#slideDown').click(function () {
+                $('div').slideDown();
+        });
+    });
+    </script>
     <script language="JavaScript" >
     function Hi() {
         alert("기아타이거즈 홈페이지에 오신것을 환영합니다");
@@ -21,6 +43,11 @@
 
 </head>
 <body onload="Hi()">
-        <embed src="기아를사랑하라.mp3" hidden>
+    <div id="about_music">
+        기아를사랑하라.mp3
+    </div>
+    <button id="slideDown"> 음악 정보 </button>
+
+    <embed src="기아를사랑하라.mp3" hidden="true">
 </body>
 </html>

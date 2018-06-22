@@ -46,8 +46,24 @@
             border-top: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
         }
+
+        #src {
+            display: none;
+        }
     </style>
-</head >
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $ ('#fadeIn').click(function () {
+                $('img').fadeIn();
+                $('img').fadeIn("slow");
+                $('img').fadeIn(3000);
+        });
+    });
+    </script>
+
+</head>
 <body>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <table>
@@ -78,8 +94,8 @@
             <td>1983년·1986년~1989년·1991년·1993년·1996년·1997년·2009·2017년 한국시리즈 우승</td>
         </tr>
     </table>
-    <img src="마스코트1.jpg" height="300" width="500" vspace="5" hspace="70" align="left">
-    <img src="마스코트2.jpg" height="300" width="500" vspace="5" hspace="70" align="right">
+    <img src="마스코트1.jpg" height="300" width="500" vspace="5" hspace="70" align="left" >
+    <img src="마스코트2.jpg" height="300" width="500" vspace="5" hspace="70" align="right" >
     <table>
         <br>
         <tr>

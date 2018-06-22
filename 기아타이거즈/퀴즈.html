@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>퀴즈</title>
+    <style>
+        body {
+            background-image: url('메인.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 1300px 300px;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+
+        button {
+            position: absolute;
+            top: 450px;
+            left: 520px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.3em;
+            font-family: '궁서체';
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button01").click(function () {
+                $("img").animate({
+                    height: '500px',
+                    width: '500px'
+                    });
+             });
+         });
+    </script>
+</head>
+<body>
+    <button class=button01>확대</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+       <p> 전 KBO 리그 해태 타이거즈의 투수이자, 현재 대한민국 야구 국가대표팀의 감독이며, 선수 시절 11년간 6번의 한국 시리즈 우승을 이끌었고, <br>
+        7년 연속 평균자책점 수위와 4차례 다승왕을 차지했고 3번의 정규시즌 MVP와 6번의 골든글러브를 수상한 인물은 누구일까요?<br>
+        ('확대' 버튼을 눌러 정답을 확인하세요!)
+       </p>
+        <div><img src="선동렬.jpg" height="50" width="35" vspace="25" hspace="700" align="left"></div>
+</body>
+</html>
